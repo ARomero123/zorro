@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<html prefix="og: http://ogp.me/ns#"></html>
+<head>
+    <title>Michis</title>
+    <meta property="og:title" content="Michis"/>
+    <meta property="og:description" content="gatitos hermosos y gatosos"/>
+    <meta property="og:image" content="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F358951032798526146%2F&psig=AOvVaw0ncDBy4m1LOm1bTORJHlMx&ust=1597340448617000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCMjigoOblusCFQAAAAAdAAAAABAI"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="shortcut icon" href="img2/images.png">
+    <link rel="stylesheet" href="styles3.css">
+
+</head>
+<body>
+  <dialog id="modal">
+      <h1>GAtos</h1>
+    <img src="img2/gato2.jpg" >
+    <button id="close">cerrar</button>
+  </dialog>    
+  <button id="button">Abrir</button>
+    
+  <details>
+        <summary>Gatitos</summary> 
+        <p>son los mejores</p>     
+     </details>      
+      
+    <iframe src="" frameborder="0"></iframe><iframe width="560" height="315" src="https://www.youtube.com/embed/0rD8p9MvDe8"
+     frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     <video src="videos/yootube.mp4" controls 
+    poster="img2/gato3.png"></video>
+    
+    <audio src="audios/musica.mp3" controls  ></audio>
+    
+<script>
+    const modal = document.getElementById('modal');
+    const  button = document.getElementById('button');
+    const  close = document.getElementById('close');
+ button.addEventListener('click',() => { modal.setAttribute('open','true')
+   
+})
+close.addEventListener('click',() => { modal.removeAttribute('open')
+})
+   
+</script>
+    <script>
+         document.getElementById('username').addEventListener('keyup', e => {
+            console.log(e.target.value)    
+        })
+    </script>
+    <form>
+        <fieldset>
+        <legend>Datos personales</legend>
+        <div>
+        <label>Usuario
+            
+            <input id="username" name="username" value="josue">
+
+        </label>
+          </div>
+          <div>
+        <label>Fecha de nacimiento
+        <input type="date" name="date">
+        </label>
+    </div>
+    
+<div>
+<input type="password" name="password" placeholder="Contraseña" required>
+</div>
+<div>
+    <input type="email" name="email" placeholder="rimero782@gamil.com" required
+    > 
+
+</div>
+<div>
+    <input type="submit" value="Iniciar sesion">
+    
+</div>
+</fieldset>
+<fieldset>
+    <legend>Que raza de gatos te gustan</legend>
+    <label><input type="checkbox">atigrado</label>
+    <label><input type="checkbox">Siames</label>
+    <label><input type="checkbox">persa</label>
+    <label><input type="checkbox">egipcio</label>
+</fieldset>
+<fieldset>
+    <legend>genero</legend>
+    <label> <input type="radio" name="gender">Hombre</label>
+    <label> <input type="radio" name="gender">Mujer</label>
+    <label> <input type="radio" name="gender">Lgtb</label>
+    <label> <input type="radio" name="gender">Vaca</label>
+    <label> <input type="radio" name="gender">Otros</label>
+</fieldset>
+<fieldset>
+    <legend>Nacionalidad</legend>
+    
+    <label for="country">Escoje tu Pais de origen</label>
+    <select name="country" id="country">
+    <optgroup label="America del sur">
+    <option value="Ecuador">Ecuador</option>
+    <option value="Chile">Chile</option>
+    <option value="Argentina">Argentina</option>
+    <option value="Colombia">Colombia</option>
+    <option value="Venezuela">Venezuela</option>
+</optgroup>
+<optgroup label="Europa">
+    <option value="Francia">Ecuador</option>
+    <option value="Inglaterra">Chile</option>
+    <option value="Italia">Argentina</option>
+    <option value="Alemania">Colombia</option>
+    <option value="Portugal">Venezuela</option>
+</optgroup>
+
+
+</select>
+</fieldset>
+    </form>
+    
+    <table>
+        <caption>Horario de Clases</caption>
+        <colgroup>
+            <col span="2">
+            <col style="background: pink;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miercoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Quimica</td>
+                <td>Matematicas</td>
+                <td>Historia</td>
+                <td>Cultura</td>
+                <td>Artistica</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Informatica</td>
+                <td rowspan="3">Fisica</td>
+                <td rowspan="3">Lengua</td>
+                <td>Ingles</td>
+                <td>Quimica</td>
+            </tr>
+              
+                
+                <td rowspan="3">Informatica</td>
+                <td>Emprendimiento</td>
+            <tr>
+                <td>Matematicas</td>
+            </tr>
+        </tbody>
+    </table>
+        
+    
+    <article itemscope itemtype=" http://schema.org/Blog">
+    <picture>
+        <source srcset="img2/gatox1.jpg" media="(min-whidth: 500px)">
+            <img src="img2/gatox2.png" alt="enojon">
+
+        
+    </picture>
+        <h1>LA SALUD</h1>
+        <p>la salud es lo mas importante en la vida</p>
+        <footer> 
+            <p itemprop="author">Josue Romero</p> 
+        </footer>
+    </article>
+            
+    
+</body>
+
+</html>
